@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smarting_ui_component_library/smarting_ui_component_library.dart';
 
 class SmaTextButton extends StatelessWidget {
   const SmaTextButton({
@@ -7,11 +8,19 @@ class SmaTextButton extends StatelessWidget {
     required this.onTap,
     this.backgroundColor,
     this.textColor,
+    this.fontSize,
+    this.fontFamily,
+    this.fontWeight,
+    this.textStyle,
   });
 
   final String text;
   final Color? backgroundColor;
   final Color? textColor;
+  final double? fontSize;
+  final String? fontFamily;
+  final FontWeight? fontWeight;
+  final TextStyle? textStyle;
   final Function? onTap;
 
   @override
@@ -26,9 +35,13 @@ class SmaTextButton extends StatelessWidget {
           ),
           child: Text(
             text,
-            style: TextStyle(
-              color: textColor,
-            ),
+            style: textStyle ??
+                SmaTextStyles.body.copyWith(
+                  color: textColor ?? Colors.black,
+                  fontSize: fontSize,
+                  fontFamily: fontFamily,
+                  fontWeight: fontWeight,
+                ),
           )),
     );
   }
