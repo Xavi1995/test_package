@@ -39,7 +39,7 @@ class SmaTextButton extends StatelessWidget {
                 SmaTextStyles.body.copyWith(
                   color: textColor ?? Colors.black,
                   fontSize: fontSize,
-                  fontFamily: fontFamily,
+                  fontFamily: fontFamily ?? 'TitilliumWeb',
                   fontWeight: fontWeight,
                 ),
           )),
