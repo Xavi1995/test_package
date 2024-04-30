@@ -16,6 +16,7 @@ class SmaTextButton extends StatelessWidget {
     return GestureDetector(
       onTap: () => onTap,
       child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.circular(20),
