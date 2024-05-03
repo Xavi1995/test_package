@@ -3,6 +3,10 @@
 import 'package:flutter/material.dart';
 
 class CommonColors {
+  //Smarting Colors
+  static const Color carbon = Color(0xFF3F3F3F);
+  static const Color smartingBlue = Color(0xFF00263D);
+
   // Green Validation
   static const Color s50 = Color(0xFFF3FBEF);
   static const Color s74 = Color(0xFFCCEDBD);
