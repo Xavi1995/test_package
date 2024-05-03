@@ -27,6 +27,7 @@ class SmaTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => onTap,
+
       child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           decoration: BoxDecoration(
@@ -36,7 +37,7 @@ class SmaTextButton extends StatelessWidget {
           child: Text(
             text,
             style: textStyle ??
-                SmaTextStyles.body.copyWith(
+                SmaTextStyles.paragraph.copyWith(
                   color: textColor ?? Colors.black,
                   fontSize: fontSize,
                   fontFamily: fontFamily ?? 'TitilliumWeb',
